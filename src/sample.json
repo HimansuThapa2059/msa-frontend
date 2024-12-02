@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Inception",
+      "type": "movie",
+      "rating": "8.8",
+      "description": "Inception is a mind-bending sci-fi thriller about a group of thieves who enter the subconscious of their targets to steal secrets. The protagonist must plant an idea into the mind of a business mogul.",
+      "genre": ["Sci-Fi", "Action", "Thriller"],
+      "updatedAt": "2024-11-28T09:26:15.000000Z",
+      "createdAt": "2024-11-28T09:26:15.000000Z"
+    },
+    {
+      "id": 2,
+      "name": "The Witcher",
+      "type": "series",
+      "rating": null,
+      "description": "The Witcher is a fantasy series set in a medieval-inspired world, following Geralt of Rivia, a monster hunter who battles dark forces and faces moral dilemmas in a land full of political intrigue.",
+      "genre": ["Fantasy", "Action", "Drama"],
+      "updatedAt": "2024-11-28T09:26:42.000000Z",
+      "createdAt": "2024-11-28T09:26:42.000000Z"
+    },
+    {
+      "id": 3,
+      "name": "Inception",
+      "type": "movie",
+      "rating": "8.8",
+      "description": "Inception is a mind-bending sci-fi thriller about a group of thieves who enter the subconscious of their targets to steal secrets. The protagonist must plant an idea into the mind of a business mogul.",
+      "genre": ["Sci-Fi", "Action", "Thriller"],
+      "updatedAt": "2024-11-28T09:26:15.000000Z",
+      "createdAt": "2024-11-28T09:26:15.000000Z"
+    },
+    {
+      "id": 4,
+      "name": "The Witcher",
+      "type": "series",
+      "rating": null,
+      "description": "The Witcher is a fantasy series set in a medieval-inspired world, following Geralt of Rivia, a monster hunter who battles dark forces and faces moral dilemmas in a land full of political intrigue.",
+      "genre": ["Fantasy", "Action", "Drama"],
+      "updatedAt": "2024-11-28T09:26:42.000000Z",
+      "createdAt": "2024-11-28T09:26:42.000000Z"
+    },
+    {
+      "id": 5,
+      "name": "Inception",
+      "type": "movie",
+      "rating": "8.8",
+      "description": "Inception is a mind-bending sci-fi thriller about a group of thieves who enter the subconscious of their targets to steal secrets. The protagonist must plant an idea into the mind of a business mogul.",
+      "genre": ["Sci-Fi", "Action", "Thriller"],
+      "updatedAt": "2024-11-28T09:26:15.000000Z",
+      "createdAt": "2024-11-28T09:26:15.000000Z"
+    },
+    {
+      "id": 6,
+      "name": "The Witcher",
+      "type": "series",
+      "rating": null,
+      "description": "The Witcher is a fantasy series set in a medieval-inspired world, following Geralt of Rivia, a monster hunter who battles dark forces and faces moral dilemmas in a land full of political intrigue.",
+      "genre": ["Fantasy", "Action", "Drama"],
+      "updatedAt": "2024-11-28T09:26:42.000000Z",
+      "createdAt": "2024-11-28T09:26:42.000000Z"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { MoveRight, LogOut, Menu, Sparkles } from "lucide-react";
+import { MoveRight, Menu, Sparkles } from "lucide-react";
 import { buttonVariants } from "./ui/button";
 
 import { Link } from "react-router";
@@ -8,7 +8,6 @@ const Home = () => {
     <>
       <Navbar />
       <Hero />
-      {/* <div className="background-pattern absolute top-0 left-0 w-full h-full -z-10" /> */}
     </>
   );
 };
@@ -47,8 +46,6 @@ const Hero = () => {
 export default Home;
 
 const Navbar = () => {
-  const isAuthenticated = true;
-
   return (
     <nav className="sticky inset-x-0 top-0 z-30 h-16 w-full border-b border-zinc-200 bg-white/75 backdrop-blur-lg transition-all px-6">
       <div className="max-container">
@@ -62,43 +59,15 @@ const Navbar = () => {
           </button>
 
           <div className="hidden items-center space-x-4 sm:flex">
-            <>
-              {!isAuthenticated && (
-                <Link
-                  to={"/signin"}
-                  className={buttonVariants({
-                    variant: "ghost",
-                    className: "hover:bg-zinc-200",
-                  })}
-                >
-                  Sign In
-                </Link>
-              )}
-
-              {!isAuthenticated && (
-                <Link
-                  className={buttonVariants({
-                    size: "default",
-                    className: " bg-indigo-950",
-                  })}
-                  to="/msa"
-                  // target="_blank"
-                >
-                  Get started
-                </Link>
-              )}
-
-              {isAuthenticated && (
-                <button
-                  className={buttonVariants({
-                    variant: "outline",
-                  })}
-                >
-                  Log out
-                  <LogOut className="h-4 w-4" />
-                </button>
-              )}
-            </>
+            <Link
+              to={"/login"}
+              className={buttonVariants({
+                variant: "ghost",
+                className: "hover:bg-zinc-200",
+              })}
+            >
+              Sign In
+            </Link>
           </div>
         </div>
       </div>

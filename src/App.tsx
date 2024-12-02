@@ -10,6 +10,7 @@ import NotFound from "./components/NotFound";
 import LogIn from "./components/LogIn";
 import AuthLayout from "./AuthLayout";
 import Register from "./components/Register";
+import New from "./components/New";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         </Route>
 
         <Route path="*" element={<NotFound />} />
+        <Route path="new" element={<New />} />
 
         <Route path="/" element={<AuthLayout />}>
           <Route path="login" element={<LogIn />} />
