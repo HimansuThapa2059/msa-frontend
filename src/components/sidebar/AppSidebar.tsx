@@ -48,7 +48,7 @@ export function AppSidebar() {
     <Sidebar>
       <SidebarHeader>
         <Link
-          to="/msa"
+          to="#"
           className="flex gap-2 items-center p-1  hover:bg-gray-100 rounded-lg"
         >
           <img src="/logo.png" alt="logo" className="w-10 h-10" />

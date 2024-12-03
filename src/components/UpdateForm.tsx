@@ -11,6 +11,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogDescription,
+  DialogClose,
 } from "@/components/ui/dialog";
 
 const formSchema = z.object({
@@ -107,13 +108,16 @@ const UpdateForm: React.FC<UpdateFormProps> = ({
   };
 
   return (
-    <DialogContent>
+    <DialogContent className="max-w-[90%] rounded-xl overflow-y-scroll">
       <DialogHeader>
         <DialogTitle>Update Information</DialogTitle>
         <DialogDescription>Please update the details below.</DialogDescription>
       </DialogHeader>
 
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="space-y-4 md:space-y-8"
+      >
         <div className="flex flex-col">
           <label htmlFor="name" className="mb-1 text-sm">
             Name:
@@ -205,6 +209,11 @@ const UpdateForm: React.FC<UpdateFormProps> = ({
         </div>
 
         <div className="flex justify-end gap-2 mt-4">
+          <DialogClose asChild>
+            <Button type="button" variant="outline" disabled={isLoading}>
+              Close
+            </Button>
+          </DialogClose>
           <Button type="submit" className="px-8 text-sm">
             {isLoading ? (
               <Loader2 className="animate-spin h-3 w-3 " />

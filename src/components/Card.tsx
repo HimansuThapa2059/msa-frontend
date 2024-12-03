@@ -51,9 +51,6 @@ const Card: React.FC<CardProps> = ({
       <div className="flex justify-between items-center">
         <p className="font-semibold text-lg text-gray-900 truncate">{name}</p>
         <div className="flex items-center">
-          {/* <button className=" p-1 rounded-md text-gray-700 hover:text-gray-500">
-            
-          </button> */}
           <Dialog>
             <DialogTrigger>
               <Edit size={18} />
@@ -86,7 +83,7 @@ const Card: React.FC<CardProps> = ({
       </p>
       {type ? (
         <p className="text-sm text-gray-600">
-          <span className="font-semibold">Genre: {type}</span>
+          <span className="font-semibold">Type: {type}</span>
         </p>
       ) : null}
       <p className="text-sm text-gray-600">

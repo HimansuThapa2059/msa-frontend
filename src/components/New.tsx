@@ -76,7 +76,7 @@ const New = () => {
 
   return (
     <main className="h-screen flex items-center justify-center">
-      <div className="border border-slate-300 p-4 rounded-lg w-[30%]">
+      <div className="border border-slate-300 p-4 rounded-xl w-[30%] min-w-80">
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
           <div className="flex flex-col">
             <label htmlFor="name" className="mb-1 text-sm">
@@ -169,6 +169,14 @@ const New = () => {
           </div>
 
           <div className="flex justify-end gap-2 mt-4">
+            <Button
+              className="px-8 text-sm"
+              variant={"outline"}
+              onClick={() => navigate(-1)}
+              disabled={isLoading}
+            >
+              <span>Cancel</span>
+            </Button>
             <Button type="submit" className="px-8 text-sm">
               {isLoading ? (
                 <Loader2 className="animate-spin h-3 w-3 " />
